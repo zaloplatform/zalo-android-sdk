@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="zalo_blue">#05a3e5</color>
+    <color name="title_grey">#dedede</color>
+    <color name="title_light_grey">#aaa</color>
+    <color name="zalosdk_white">#fff</color>
+     <color name="default_screen_bg">#20324a</color>
+    <color name="rounded_container_bg">#80000000</color>
+    <color name="rounded_container_border">#3b3f44</color>
+    <color name="light_gray_header_color">#dedede</color>
+</resources>

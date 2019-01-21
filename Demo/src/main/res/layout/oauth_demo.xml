@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/imv_login_form_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dota" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/title_layout" />
+
+        <com.zing.zalo.zalosdk.oauth.LoginForm
+            android:id="@+id/login_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/zalo_login_type_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zalo login type: "
+                android:textColor="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/zalo_login_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/zalo_arrays"
+                android:prompt="@string/zalo_login_prompt"
+                android:spinnerMode="dialog"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/show_login_form_type_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bảo vệ tk guest: "
+                android:textColor="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/show_login_form_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/login_form_arrays"
+                android:prompt="@string/login_form_prompt"
+                android:spinnerMode="dialog"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/group_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btn_loginform"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_outer_01"
+                        android:layout_marginRight="@dimen/_outer_01"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/zalosdk_button00"
+                        android:onClick="loginform_click"
+                        android:text="@string/login_form"
+                        android:textColor="@color/zalosdk_white" />
+
+                    <Button
+                        android:id="@+id/btn_login_via_app"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_outer_01"
+                        android:layout_marginRight="@dimen/_outer_01"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/zalosdk_button00"
+                        android:onClick="loginzalo_viaapp_click"
+                        android:text="@string/login_via_app"
+                        android:textColor="@color/zalosdk_white" />
+
+                    <Button
+                        android:id="@+id/btn_login_via_web"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_outer_01"
+                        android:layout_marginRight="@dimen/_outer_01"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/zalosdk_button00"
+                        android:onClick="login_zalo_via_web_click"
+                        android:text="@string/login_via_web"
+                        android:textColor="@color/zalosdk_white" />
+
+                    <Button
+                        android:id="@+id/btn_login_app_web"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_outer_01"
+                        android:layout_marginRight="@dimen/_outer_01"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/zalosdk_button00"
+                        android:onClick="login_via_app_or_web_click"
+                        android:text="@string/login_via_web_app"
+                        android:textColor="@color/zalosdk_white" />
+
+                    <Button
+                        android:id="@+id/btn_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_outer_01"
+                        android:layout_marginRight="@dimen/_outer_01"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/zalosdk_button00"
+                        android:onClick="register_click"
+                        android:text="@string/register_zalo"
+                        android:textColor="@color/zalosdk_white" />
+
+                    <Button
+                        android:id="@+id/btn_login_fb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_outer_01"
+                        android:layout_marginRight="@dimen/_outer_01"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/zalosdk_button00"
+                        android:onClick="login_facebook_click"
+                        android:text="@string/login_facebook"
+                        android:textColor="@color/zalosdk_white" />
+
+                    <Button
+                        android:id="@+id/btn_login_gplus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_outer_01"
+                        android:layout_marginRight="@dimen/_outer_01"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/zalosdk_button00"
+                        android:onClick="logingplus_click"
+                        android:text="@string/login_gplus"
+                        android:textColor="@color/zalosdk_white" />
+
+                    <com.google.android.gms.common.SignInButton
+                        android:id="@+id/sign_in_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_outer_01"
+                        android:layout_marginRight="@dimen/_outer_01"
+                        android:layout_marginTop="10dip"
+                        android:layout_gravity="center_horizontal"
+                        android:onClick="logingplus_click2"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_login_zing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_outer_01"
+                        android:layout_marginRight="@dimen/_outer_01"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/zalosdk_button00"
+                        android:onClick="loginzing_click"
+                        android:text="@string/login_zing_me"
+                        android:textColor="@color/zalosdk_white" />
+
+                    <Button
+                        android:id="@+id/btn_login_guest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_outer_01"
+                        android:layout_marginRight="@dimen/_outer_01"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/zalosdk_button00"
+                        android:onClick="loginguest_click"
+                        android:text="@string/login_guest"
+                        android:textColor="@color/zalosdk_white" />
+
+                    <Button
+                        android:id="@+id/btn_protect_acc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_outer_01"
+                        android:layout_marginRight="@dimen/_outer_01"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/zalosdk_button00"
+                        android:onClick="protectAcc_click"
+                        android:text="Bảo vệ tài khoản"
+                        android:textColor="@color/zalosdk_white" />
+
+                    <Button
+                        android:id="@+id/btn_validate_oauth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_outer_01"
+                        android:layout_marginRight="@dimen/_outer_01"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/zalosdk_button00"
+                        android:onClick="validate_click"
+                        android:text="@string/validate_oauth_code"
+                        android:textColor="@color/zalosdk_white" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

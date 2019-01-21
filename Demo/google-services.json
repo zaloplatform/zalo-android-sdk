@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "266083484636",
+    "project_id": "demozdicevng"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266083484636:android:7eac448b449e70a5",
+        "android_client_info": {
+          "package_name": "com.vng.zing.zdice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266083484636-4trhpspnr89kgbhpd7hif34u6rlq3ugu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vng.zing.zdice",
+            "certificate_hash": "46d73242f8d2dd8b572ecff210fc01f0b3771ebd"
+          }
+        },
+        {
+          "client_id": "266083484636-m2tnfrm8slgfocr1jpvopq4i07cle6sp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtRaOnTlLEpEApIEpNOYstYzFWcUKRDSE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vng.zing.zdice"
+    android:versionCode="8"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="23" />
+
+    <!-- Optional permissions  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <!-- ZaloSDK required to use this Application -->
+    <application
+        android:name="com.zing.zalo.zalosdk.oauth.ZaloSDKApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <!-- Required zalo app id -->
+        <meta-data
+            android:name="com.zing.zalo.zalosdk.appID"
+            android:value="@string/appID" />
+
+        <!-- Required for login facebook -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <!-- Optional meta data -->
+        <meta-data
+            android:name="zuqEnabled"
+            android:value="false" />
+
+        <!-- Optional meta data -->        
+        <meta-data
+            android:name="senderId"
+            android:value="@string/senderId" />
+
+        <!--Zalo SDK required WebLoginActivity -->
+        <activity
+            android:name="com.zing.zalo.zalosdk.oauth.WebLoginActivity"
+            android:theme="@style/FixThemeForLoginWebview"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- Demo activities -->
+        <activity
+            android:name="com.vng.zing.zdice.HomeActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />				
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.vng.zing.zdice.OAuthDemoActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name="com.vng.zing.zdice.OpenApiDemoActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name="com.vng.zing.zdice.PluginDemoActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme">
+        </activity>
+    </application>
+</manifest>

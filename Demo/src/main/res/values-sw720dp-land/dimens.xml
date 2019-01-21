@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="_outer_01">10dip</dimen>
+    <dimen name="_outer_02">5dip</dimen>
+</resources>

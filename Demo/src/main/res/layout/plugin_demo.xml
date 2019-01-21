@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+     >
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical" >
+    <include layout="@layout/title_layout"/>
+    
+      <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/group_btn"
+         android:orientation="vertical"
+         >
+      <EditText 
+          android:singleLine="true"
+          android:imeOptions="actionNext"
+            android:id="@+id/input_link_share"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Nhập link share"
+            android:text="vnexpress.net"
+            android:textColorHint="@color/zalosdk_zalo_blue"
+            android:textColor="@color/zalosdk_zalo_blue"
+            android:layout_height="wrap_content"/>
+
+      <EditText 
+          android:singleLine="true"
+          android:imeOptions="actionNext"
+            android:id="@+id/input_msg"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Nhập init message"
+            android:text=""
+            android:textColorHint="@color/zalosdk_zalo_blue"
+            android:textColor="@color/zalosdk_zalo_blue"
+            android:layout_height="wrap_content"/>
+
+      <EditText 
+          android:singleLine="true"
+          android:imeOptions="actionNext"
+            android:id="@+id/input_app_name"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Nhập app name"
+            android:text="ZDice"
+            android:textColorHint="@color/zalosdk_zalo_blue"
+            android:textColor="@color/zalosdk_zalo_blue"
+            android:layout_height="wrap_content"/>
+      <EditText 
+          android:singleLine="true"
+          android:imeOptions="actionNext"
+            android:id="@+id/input_link_title"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Nhập link title"
+            android:text=""
+            android:textColorHint="@color/zalosdk_zalo_blue"
+            android:textColor="@color/zalosdk_zalo_blue"
+            android:layout_height="wrap_content"/>
+      <EditText 
+          android:singleLine="true"
+          android:imeOptions="actionNext"
+            android:id="@+id/input_link_desc"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Nhập link desc"
+            android:text=""
+            android:textColorHint="@color/zalosdk_zalo_blue"
+            android:textColor="@color/zalosdk_zalo_blue"
+            android:layout_height="wrap_content"/>
+      <EditText 
+          android:singleLine="true"
+          android:imeOptions="actionNext"
+            android:id="@+id/input_link_thumb"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Nhập link thumb"
+            android:text=""
+            android:textColorHint="@color/zalosdk_zalo_blue"
+            android:textColor="@color/zalosdk_zalo_blue"
+            android:layout_height="wrap_content"/>
+      <EditText 
+          android:singleLine="true"
+          android:imeOptions="actionNext"
+            android:id="@+id/input_link_source"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Nhập link source"
+            android:text=""
+            android:textColorHint="@color/zalosdk_zalo_blue"
+            android:textColor="@color/zalosdk_zalo_blue"
+            android:layout_height="wrap_content"/>   
+          
+    <Button
+        android:layout_marginLeft="@dimen/_outer_01"
+   		android:layout_marginRight="@dimen/_outer_01"
+        android:id="@+id/btn_share_via"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/zalosdk_button00"
+        android:text="@string/txt_share_app"
+        android:textColor="@color/zalosdk_white" 
+        android:onClick="share_via_click"
+        />
+
+    <Button
+        android:id="@+id/btn_share_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/zalosdk_button00"
+        android:text="@string/txt_share_message"
+        android:textColor="@color/zalosdk_white" 
+        android:onClick="share_msg_click"
+        android:layout_marginLeft="@dimen/_outer_01"
+   		 android:layout_marginRight="@dimen/_outer_01"
+        />
+
+    <Button
+        android:id="@+id/btn_share_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/zalosdk_button00"
+        android:text="@string/txt_share_feed"
+        android:textColor="@color/zalosdk_white"
+        android:onClick="btn_share_feed_click"
+        android:layout_marginLeft="@dimen/_outer_01"
+    android:layout_marginRight="@dimen/_outer_01"
+         />
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/zalosdk_button00"
+        android:text="@string/txt_share"
+        android:textColor="@color/zalosdk_white"
+        android:onClick="btn_share_click"
+        android:layout_marginLeft="@dimen/_outer_01"
+   		android:layout_marginRight="@dimen/_outer_01"
+         />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

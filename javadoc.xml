@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" additionalparam="-encoding UTF-8 " author="true" classpath="." destdir="doc" doctitle="ZaloSDK" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" source="1.6" sourcefiles="src/com/zing/zalo/zalosdk/oauth/ZaloOAuthResultCode.java,src/com/zing/zalo/zalosdk/oauth/ZaloQueryService.java,src/com/zing/zalo/zalosdk/oauth/LocalizedString.java,src/com/zing/zalo/zalosdk/oauth/ZaloOAuth.java,src/com/zing/zalo/zalosdk/oauth/InitializedException.java,src/com/zing/zalo/zalosdk/oauth/ZaloSDKApplication.java,src/com/zing/zalo/zalosdk/oauth/OAuthCompleteListener.java" splitindex="true" use="true" version="true"/>
+    </target>
+</project>

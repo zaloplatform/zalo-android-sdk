@@ -1,0 +1,326 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".HomeActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#05a3e5"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:paddingBottom="5dip" >
+
+            <TextView
+                android:id="@+id/name_ctl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/peter_pan"
+                android:textColor="@color/zalosdk_white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/uid_ctl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/name_ctl"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/zalosdk_white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score_tt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/uid_ctl"
+                android:layout_marginLeft="10dip"
+                android:text="@string/tai_khoan"
+                android:textColor="@color/zalosdk_white" />
+
+            <TextView
+                android:id="@+id/score_ctl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/uid_ctl"
+                android:layout_toRightOf="@id/score_tt"
+                android:text="@string/_900"
+                android:textColor="@color/zalosdk_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/uid_ctl"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/score_ctl"
+                android:text="@string/diem"
+                android:textColor="@color/zalosdk_white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/num_uncompleted_ts"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFED1"
+        android:gravity="center_horizontal"
+        android:padding="10dip"
+        android:textStyle="italic"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nap_diem"
+                android:textColor="@color/title_light_grey"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/title_grey" />
+
+            <Spinner
+                android:id="@+id/payment_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/channel_arrays"
+                android:prompt="@string/channel_prompt"
+                android:spinnerMode="dialog" />
+
+            <Spinner
+                android:id="@+id/charge_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:entries="@array/charge_arrays"
+                android:prompt="@string/charge_prompt"
+                android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Số tiền (VND)"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/suggest_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Suggest amount (VND)"
+                android:imeOptions="actionNext|flagNoExtractUi" />
+
+            <!-- <CheckBox
+                android:id="@+id/enable_appuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="On/Off App User" />
+
+            <RelativeLayout
+                android:id="@+id/edit_sdk_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Zalo Version" />
+
+                <TextView
+                    android:id="@+id/sdk_ver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout> -->
+
+            <TextView
+                android:id="@+id/screen_density"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dip"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/send_invite"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/zalosdk_button00"
+                    android:text="Gửi lời mời"
+                    android:textColor="@color/zalosdk_white" />
+
+                <Button
+                    android:id="@+id/push_feed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/zalosdk_button00"
+                    android:text="Gửi feed"
+                    android:textColor="@color/zalosdk_white" />
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/plus_ctl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/zalosdk_button00"
+                android:text="@string/nap_them"
+                android:textColor="@color/zalosdk_white" />
+
+            <Button
+                android:id="@+id/sms_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/zalosdk_button00"
+                android:text="@string/nap_sms_5k"
+                android:textColor="@color/zalosdk_white" />
+
+            <Button
+                android:id="@+id/sms_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/zalosdk_button00"
+                android:text="@string/nap_sms_10k"
+                android:textColor="@color/zalosdk_white" />
+
+            <Button
+                android:id="@+id/sms_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/zalosdk_button00"
+                android:text="@string/nap_sms_15k"
+                android:textColor="@color/zalosdk_white" />
+
+            <Button
+                android:id="@+id/retry_stt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/zalosdk_button00"
+                android:text="@string/retry_status"
+                android:textColor="@color/zalosdk_white" />
+
+            <RelativeLayout
+                android:id="@+id/sandbox_toggle_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/payment_sandbox" />
+
+                <ToggleButton
+                    android:id="@+id/sandbox_toggle"
+                    android:layout_width="103dp"
+                    android:layout_height="29dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/checkbox_bk"
+                    android:checked="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+            
+           <Button
+                android:id="@+id/btn_feed1thumb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/zalosdk_button00"
+                android:text="Share message"
+                android:textColor="@color/zalosdk_white" />
+            
+           <Button
+                android:id="@+id/btn_feedmorethumb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/zalosdk_button00"
+                android:text="Share feed"
+                android:textColor="@color/zalosdk_white" />
+           
+           <Button
+                android:id="@+id/btn_feednothumb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/zalosdk_button00"
+                android:text="Share"
+                android:textColor="@color/zalosdk_white" />
+            
+			<Button
+                android:id="@+id/setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/zalosdk_button00"
+                android:text="@string/tuy_chinh"
+                android:textColor="@color/zalosdk_white" />
+			
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="#DF7C7B"
+                android:text="@string/dang_xuat"
+                android:textColor="@color/zalosdk_white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

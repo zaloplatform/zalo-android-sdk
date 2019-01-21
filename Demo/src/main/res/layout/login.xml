@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dota" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#05a3e5"
+        android:gravity="center_horizontal"
+        android:padding="10dip"
+        android:text="@string/app_name"
+        android:textColor="@color/zalosdk_white"
+        android:textSize="18sp" />
+
+    <com.zing.zalo.zalosdk.oauth.LoginForm
+        android:id="@+id/login_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+<ScrollView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    <LinearLayout
+        android:id="@+id/button_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/open_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zalosdk_button00"
+            android:text="Login Form"
+            android:textColor="@color/zalosdk_white" />
+        
+        <EditText 
+            android:id="@+id/share_link"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Enter Link"
+            android:textColorHint="@color/zalosdk_white"
+            android:textColor="@color/zalosdk_white"
+            android:layout_height="wrap_content"/>
+        
+        
+          <EditText 
+            android:id="@+id/link_title"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="link title"
+            android:textColorHint="@color/zalosdk_white"
+            android:textColor="@color/zalosdk_white"
+            android:layout_height="wrap_content"/>
+          
+            <EditText 
+            android:id="@+id/link_desc"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="link_desc"
+            android:textColorHint="@color/zalosdk_white"
+            android:textColor="@color/zalosdk_white"
+            android:layout_height="wrap_content"/>
+            
+              <EditText 
+            android:id="@+id/link_thumb"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="link_thumb"
+            android:textColorHint="@color/zalosdk_white"
+            android:textColor="@color/zalosdk_white"
+            android:layout_height="wrap_content"/>
+              
+                <EditText 
+            android:id="@+id/link_source"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="link_source"
+            android:textColorHint="@color/zalosdk_white"
+            android:textColor="@color/zalosdk_white"
+            android:layout_height="wrap_content"/>
+        
+        <!-- aaa -->
+        <Button
+                android:id="@+id/btn_sharemessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/zalosdk_button00"
+                android:text="Send message"
+                android:textColor="@color/zalosdk_white" />
+            
+           <Button
+                android:id="@+id/btn_sharelink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/zalosdk_button00"
+                android:text="Share feed"
+                android:textColor="@color/zalosdk_white" />
+        <!-- bbb -->
+        
+        <Button
+                android:id="@+id/btn_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/zalosdk_button00"
+                android:text="Share"
+                android:textColor="@color/zalosdk_white" />
+        
+  
+    </LinearLayout>
+	</ScrollView>
+    <WebView
+        android:id="@+id/test_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:padding="15dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

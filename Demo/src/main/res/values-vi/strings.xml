@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_english">VI----Tiếng Anh</string>
+    <string name="txt_myanmar">VI---MIến</string>
+    <string name="txt_vietnam">VI----Việt Nam</string>
+    <string name="channel_prompt">Chọn kênh thanh toán</string>
+    <string name="login_form_prompt">On/Off form bảo vệ tk</string>
+    <string name="zalo_login_prompt">Chọn kênh Zalo login</string>
+ 	<string name="charge_prompt">Chọn mệnh giá</string>
+ 	
+ 	<string-array name="login_form_arrays">
+        <item>Mặc Định</item>
+        <item>Bật</item>
+        <item>Tắt</item>
+    </string-array>
+    
+ 	<string-array name="zalo_arrays">
+        <item>VIA APP</item>
+        <item>VIA WEB</item>
+        <item>VIA APP/WEB</item>
+    </string-array>
+    
+    <string-array name="channel_arrays">
+        <item>Tất cả</item>
+        <item>Thẻ cào điện thoại</item>
+        <item>MobiPhone</item>
+        <item>Viettel</item>
+        <item>VinaPhone</item>
+        <item>Thẻ Zing</item>
+        <item>Zing Xu</item>
+        <item>Thẻ ATM</item>
+        <item>Zalo code</item>
+        <item>SMS</item>
+        <item>Thẻ tín dụng</item>
+        <item>Google Wallet</item>
+        
+    </string-array>
+    
+    <string-array name="exclude_channel_arrays">
+        <item>Thẻ cào điện thoại</item>
+        <item>MobiPhone</item>
+        <item>Viettel</item>
+        <item>VinaPhone</item>
+        <item>Thẻ Zing</item>
+        <item>Zing Xu</item>
+        <item>Thẻ ATM</item>
+        <item>Zalo code</item>
+        <item>SMS</item>
+        <item>Thẻ tín dụng</item>
+        <item>Google Wallet</item>
+        
+    </string-array>
+    
+    <string-array name="charge_arrays">
+        <item>Bất kỳ</item>
+        <item>5.000 VND</item>
+        <item>10.000 VND</item>
+        <item>15.000 VND</item>
+        <item>20.000 VND</item>
+        <item>25.000 VND</item>
+        <item>30.000 VND</item>
+        <item>2.000.000 VND</item>
+    </string-array>
+    <string name="senderId">76757027681</string>
+    <string name="facebook_app_id">789039914458492</string>
+    <string name="title_facebook_login">Facebook</string>
+    
+    <!-- <string name="appID">337686432125204522</string> -->	
+	<string name="appID">1577725557845407485</string>	
+    <string name="perm_acces">Access plugin data</string>
+    <string name="perm_acces_summary">Access plugin data</string>
+    <string name="app_name">Happy Game Dev</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="peter_pan">Peter Pan</string>
+    <string name="_900">900</string>
+    <string name="score"> điểm</string>
+    <string name="title_activity_payment">PaymentActivity</string>
+    <string name="add_score">Chọn hình thức thanh toán</string>
+    <string name="zingcard">Thẻ cào Zing</string>
+    <string name="mobile_card">Thẻ cào điện thoại</string>
+    <string name="mobileacc">Tài khoản điện thoại</string>
+    <string name="atmacc">Tài khoản ATM nội địa</string>
+    <string name="hotline">"Hotline: "</string>
+    <string name="_1900_561_558">1900 561 558</string>
+    <string name="zalo_acc">Tài khoản ví Zalo</string>
+    <string name="title_activity_zing_card">ZingCardActivity</string>
+    <string name="billno">Mã đơn hàng</string>
+    <string name="lk_mbc48374652">lk_MBC48374652</string>
+    <string name="billinfo">Thông tin đơn hàng</string>
+    <string name="billdes">Nạp điểm cho tài khoản Peter Pan</string>
+    <string name="provider_info">Thông tin nhà cung cấp</string>
+    <string name="provider_name">Happy Dice (VNG Corp)</string>
+    <string name="cardcode">Mật mã của thẻ, vd: AVB170804</string>
+    <string name="cardseri">Số seri, vd: 55260393160720</string>
+    <string name="card_info">Thông tin thẻ</string>
+    <string name="ok">Đồng ý</string>
+    <string name="mobi">mobi</string>
+    <string name="vina">vina</string>
+    <string name="viettel">viettel</string>
+    <string name="price_lev">Mức giá</string>
+    <string name="lev_15_000_">15.000</string>
+    <string name="amount_unit"><u>đ</u></string>
+    <string name="user_phone">Thông tin thuê bao điện thoại</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="processing">Đang xử lý</string>
+    <string name="success">Thành công</string>
+    <string name="unsuccess">Thất bại</string>
+    <string name="notification">Thông báo</string>
+    <string name="close">Đóng</string>
+    <string name="otp">Mã xác nhận</string>
+    <string name="otp_note">"Tin nhắn chứa mã xác nhận đã được gửi đến số điện thoại "</string>
+    <string name="otp_note_atm">"Tin nhắn chứa mã xác nhận đã được gửi đi "</string>
+    <string name="pay_info">Thông tin thanh toán</string>
+    <string name="pay_money">Số tiền cần nạp</string>
+    <string name="select_bank">Chọn ngân hàng</string>
+    <string name="atm_card_holder_name">Tên chủ thẻ</string>
+    <string name="atm_card_holder_name_ex">VD: Nguyễn Văn A</string>
+    <string name="atm_card_code">Mã số thẻ</string>
+    <string name="atm_card_ex">VD: 9704000000000000</string>
+    <string name="atm_card_publish_date">Ngày phát hành:</string>
+    <string name="_01_20">01/20 </string>
+    <string name="card_password">Mật mã thẻ</string>
+    <string name="card_password_ex">******</string>
+    <string name="input_captchar">Nhập chuỗi kí tự bảo mật bên trên</string>
+    <string name="slash">/</string>
+    <string name="month">tháng</string>
+    <string name="year">năm</string>
+    <string name="add_1000">Nạp 1.000 điểm</string>
+    <string name="add_20000">Nạp 20.000 điểm</string>
+    <string name="add_24000">Nạp 24.000 điểm</string>
+    <string name="description"></string>
+    <string name="tai_khoan">"Tài khoản: "</string>
+    <string name="diem">điểm</string>
+    <string name="nap_diem">NẠP ĐIỂM</string>
+    <string name="nap_sms_5k">Nạp SMS 5.000</string>
+    <string name="nap_sms_10k">Nạp SMS 10.000</string>
+    <string name="nap_sms_15k">Nạp SMS 15.000</string>
+    <string name="cai_dat">CÀI ĐẶT</string>
+    <string name="payment_sandbox">Payment Sandbox</string>
+    <string name="dang_xuat">Đăng xuất</string>
+    <string name="retry_status">Retry status</string>
+    <string name="nap_them">Nạp thêm</string>
+	<string name="tuy_chinh">Tùy chỉnh</string>
+	<string name="clear_cached">Xóa Cached</string>
+	<string name="init_app">Init App</string>
+	<string name="open_app">Open App</string>
+	
+	<string name="title_sdk_demo">ZaloSDK Demo</string>
+	<string name="oauth">Oauth</string>
+	<string name="payment">Payment</string>
+	<string name="openapi">Profile - Friend</string>
+	<string name="plugin">Plugins</string>
+	<string name="tracking">Tracking</string>
+	<string name="txt_qos">User QOS</string>
+	
+	
+	<string name="title_demo_oauth">OAuth Demo</string>
+	<string name="login_form">Login form</string>
+	<string name="login_via_app">Login Zalo Via App</string>
+	<string name="login_via_web">Login Zalo Via Web</string>
+	<string name="login_via_web_app">Login Zalo Via App or Web</string>
+    <string name="register_zalo">Register Zalo</string>
+	<string name="login_facebook">Login Facebook</string>
+	<string name="login_gplus">Login G+</string>
+	<string name="login_zing_me">Login ZingMe</string>
+	<string name="login_guest">Login Guest</string>
+	<string name="validate_oauth_code">Validate Oauth Code</string>
+	
+	<string name="title_open_api">Open Api Demo</string>
+	<string name="get_profile">Get Profile</string>
+	<string name="txt_get_friend_list">Get Friend List</string>
+	<string name="txt_output">Output</string>
+	
+	<string name="title_tracking_demo">Tracking Demo</string>
+	<string name="txt_submit_app">Submit App User</string>
+	<string name="txt_get_device">Get Device ID</string>
+	<string name="txt_auto_tracking">Auto Activity tracking</string>
+	<string name="txt_submit_open_app">Submit Open View</string>
+	<string name="txt_exception">Submit Exception</string>
+	<string name="txt_open_app">Submit open App</string>
+	<string name="txt_init_app">Submit init app</string>
+	<string name="txt_dispatch_events">Dispatch Events</string>
+	
+ 	<string name="txt_kenh_thanh_toan">Kênh Thanh Toán:</string>
+ 	<string name="txt_loai_thanh_toan">Loại trừ kênh thanh toán:</string>
+ 	<string name="txt_thanh_toan">Thanh Toán</string>
+ 	<string name="txt_delete_payment_cached">Xóa payment cache</string>
+ 	<string name="txt_payment_demo">Payment Demo</string>
+ 	
+ 	<!-- plugin demo -->
+ 	<string name="txt_title_plugin_demo">Plugin Demo</string>
+ 	<string name="txt_share_app">Share bằng: App</string>
+ 	<string name="txt_share_web">Share bằng: Web</string>
+ 	<string name="txt_share_message">Send Message</string>
+ 	<string name="txt_share_feed">Share Feed</string>
+ 	<string name="txt_share">Share</string>
+ 	<string name="txt_hint_link">Nhập link share</string>
+ 	<string name="txt_hint_message">Nhập init message</string>
+ 	<string name="txt_hint_appname">Nhập appname</string>
+ 	<string name="txt_test_appname">Test App</string>
+ 	<string name="txt_test_message">init message</string>
+ 	<string name="txt_test_link">vnexpress.net</string>
+ 	
+ 	<string name="txt_tracking_demo">Tracking Demo</string>
+    <string name="web_client_id">266083484636-m2tnfrm8slgfocr1jpvopq4i07cle6sp.apps.googleusercontent.com</string>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <CheckBox
+        android:id="@+id/enable_appuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="On/Off App User" />
+
+    <RelativeLayout
+        android:id="@+id/edit_sdk_version"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/zalosdk_button00"
+            android:text="Zalo Version"
+            android:textColor="@color/zalosdk_white" />
+
+        <TextView
+            android:id="@+id/sdk_ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/clear_cached"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/zalosdk_button00"
+        android:text="@string/clear_cached"
+        android:textColor="@color/zalosdk_white" />
+
+    <Button
+        android:id="@+id/init_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/zalosdk_button00"
+        android:text="@string/init_app"
+        android:textColor="@color/zalosdk_white" />
+
+    <Button
+        android:id="@+id/open_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/zalosdk_button00"
+        android:text="@string/open_app"
+        android:textColor="@color/zalosdk_white" />
+</LinearLayout>

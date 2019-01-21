@@ -1,0 +1,73 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zing.zalo.zalosdk"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.zing.zalo.permission.ACCESS_THIRD_PARTY_APP_AUTHORIZATION" />
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data
+            android:name="configCrashTracking"
+            android:value="false" />
+        
+        <meta-data
+            android:name="configFullScreen"
+            android:value="true" />
+        
+        <meta-data
+            android:name="configOffSuccessDialog"
+            android:value="false" />
+        
+        <!-- Oauth activity -->
+        <activity
+            android:name="com.zing.zalo.zalosdk.oauth.EventMessageActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zing.zalo.zalosdk.oauth.WebLoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            android:configChanges="orientation"
+    		android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- Payment activity -->
+        <activity
+            android:name="com.zing.zalo.zalosdk.payment.direct.PaymentGatewayActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zing.zalo.zalosdk.payment.direct.PaymentChannelActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name="com.zing.zalo.zalosdk.payment.direct.CameraActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.zing.zalo.zalosdk.payment.direct.ReviewActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        
+    </application>
+
+</manifest>

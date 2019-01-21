@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="MissingTranslation">
+        <ignore path="res/values/strings.xml" />
+    </issue>
+    <issue id="SetJavaScriptEnabled">
+        <ignore path="src/com/vng/zing/zdice/WebPaymentBridge.java" />
+    </issue>
+</lint>

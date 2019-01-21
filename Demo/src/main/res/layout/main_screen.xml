@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:id="@+id/group_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_outer_01"
+        android:layout_marginRight="@dimen/_outer_01"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_oauth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/zalosdk_button00"
+            android:onClick="oauth_click"
+            android:text="@string/oauth"
+            android:textColor="@color/zalosdk_white" />
+
+        <Button
+            android:id="@+id/btn_openapi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/zalosdk_button00"
+            android:onClick="openapi_click"
+            android:text="@string/openapi"
+            android:textColor="@color/zalosdk_white" />
+
+        <Button
+            android:id="@+id/btn_openapi_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/zalosdk_button00"
+            android:onClick="openapi_click"
+            android:text="Open API"
+            android:textColor="@color/zalosdk_white" />
+
+        <Button
+            android:id="@+id/btn_plugin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/zalosdk_button00"
+            android:onClick="plugin_click"
+            android:text="@string/plugin"
+            android:textColor="@color/zalosdk_white" />
+
+        <Button
+            android:id="@+id/btn_tracking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/zalosdk_button00"
+            android:onClick="tracking_click"
+            android:text="@string/tracking"
+            android:textColor="@color/zalosdk_white" />
+        <Button
+            android:id="@+id/btn_qos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/zalosdk_button00"
+            android:onClick="qos_click"
+            android:text="@string/txt_qos"
+            android:visibility="gone"
+            android:textColor="@color/zalosdk_white" />
+        
+        
+        <RelativeLayout
+            android:id="@+id/edit_sdk_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/zalosdk_button00"
+                android:text="Zalo Version"
+                android:textColor="@color/zalosdk_white" />
+
+            <TextView
+                android:id="@+id/sdk_ver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
