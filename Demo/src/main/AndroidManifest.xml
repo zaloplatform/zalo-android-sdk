@@ -53,6 +53,11 @@
             android:configChanges="orientation"
             android:screenOrientation="portrait">
         </activity>
+        <activity
+            android:name="com.zing.zalo.zalosdk.oauth.OpenAPIActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
         <!-- Demo activities -->
         <activity
             android:name="com.vng.zing.zdice.HomeActivity"
