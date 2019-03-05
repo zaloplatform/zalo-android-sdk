@@ -88,8 +88,7 @@ public class PluginDemoActivity extends ZBaseActivity {
 		
 		@Override
 		public void onResult(boolean isSuccess, int errorCode, String msg, String data) {
-			Log.i("debuglog", "isSuccess: " + isSuccess + " errorCode: " + errorCode );
-//			Toast.makeText(PluginDemoActivity.this, isSuccess?"Success":"Failed with error: " + msg, Toast.LENGTH_LONG).show();
+
 		}
 	};
 }

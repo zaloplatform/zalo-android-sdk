@@ -328,7 +328,6 @@ public class OAuthDemoActivity extends ZBaseActivity{
     }
 
     public void logingplus_click2(View v){
-        Log.i("debuglog", "OAuthDemoActivity.java----log in with google:  00000");
         ZaloSDK.Instance.unauthenticate();
         authenticateExtention.authenticateWithGooglePlus(this, listener);
 
@@ -357,8 +356,6 @@ public class OAuthDemoActivity extends ZBaseActivity{
                 alertDialog.dismiss();
                 if (!HomeActivity.DISABLE_SUBMIT_APP_USER)
                     ZaloSDK.Instance.submitAppUserData("" + ZaloSDK.Instance.getZaloId(), ZaloSDK.Instance.getLastestLoginChannel(), "zalo", "appUTMSource", null);
-//				Toast.makeText(OAuthDemoActivity.this, "Login SUCC with OAuth Code: " + response.getOauthCode(), Toast.LENGTH_LONG).show();
-                showToast("Login -- SUCC!");
                 getProfile();
             }
         });
@@ -366,7 +363,6 @@ public class OAuthDemoActivity extends ZBaseActivity{
     }
 
     public void loginguest_click(View v){
-        Log.i("debuglog", "login with Guest");
         ZaloSDK.Instance.unauthenticate();
         authenticateExtention.authenticateWithGuest(this, listener);
     }
@@ -403,6 +399,5 @@ public class OAuthDemoActivity extends ZBaseActivity{
                                            String[] permissions, int[] grantResults) {
         // TODO Auto-generated method stub
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-//        ZaloSDK.Instance.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 }

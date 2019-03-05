@@ -55,27 +55,7 @@
             android:text="@string/plugin"
             android:textColor="@color/zalosdk_white" />
 
-        <Button
-            android:id="@+id/btn_tracking"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dip"
-            android:background="@drawable/zalosdk_button00"
-            android:onClick="tracking_click"
-            android:text="@string/tracking"
-            android:textColor="@color/zalosdk_white" />
-        <Button
-            android:id="@+id/btn_qos"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dip"
-            android:background="@drawable/zalosdk_button00"
-            android:onClick="qos_click"
-            android:text="@string/txt_qos"
-            android:visibility="gone"
-            android:textColor="@color/zalosdk_white" />
-        
-        
+
         <RelativeLayout
             android:id="@+id/edit_sdk_version"
             android:layout_width="match_parent"
